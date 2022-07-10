@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-image: linear-gradient(90deg, #bcc5ce, #939fae);
+}
+body .box {
+  width: 30em;
+  height: 50em;
+  box-shadow: 10px 10px 40px rgb(62, 62, 62);
+  border-radius: 15px;
+  padding: 1em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+body .box header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .box header .flech,
+body .box header .hamburgerMenu {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  background-image: linear-gradient(90deg, #bcc5ce, #939fae);
+  box-shadow: 5px 5px 12px rgb(77, 77, 77), -4px -4px 12px rgba(250, 250, 250, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  cursor: pointer;
+}
+body .box header h2 {
+  color: rgb(116, 116, 116);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body .box header .flech img {
+  width: 2em;
+}
+body .box header .hamburgerMenu .hamburger {
+  width: 2em;
+  height: 0.3em;
+  background-color: #111;
+  border-radius: 20px;
+}
+body .box header .hamburgerMenu .hamburger:not(:last-child) {
+  margin-bottom: 0.3em;
+}
+body .box header .hamburgerMenu .hamburger:nth-child(odd) {
+  width: 1em;
+}
+body .box footer .btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+body .box footer .btns button {
+  border: none;
+  outline: none;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  background-image: linear-gradient(90deg, #bcc5ce, #939fae);
+  box-shadow: 5px 5px 12px rgb(77, 77, 77), -4px -4px 12px rgba(250, 250, 250, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  cursor: pointer;
+  transition: all 1s;
+}
+body .box footer .btns button img {
+  width: 1.25em;
+}
+body .box footer .btns button:hover {
+  opacity: 0.7;
+}
+body .box footer .btns button:active {
+  background: #717171;
+}/*# sourceMappingURL=style.css.map */
